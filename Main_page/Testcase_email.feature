@@ -1,15 +1,15 @@
 Feature: Email field
 
-Scenario: Valid email input and submit test
-    Given I am on the website main page
-    When I click the email field
-    And I input the address "testCase@testCase.com"
-    And I click the "Submit" button
-    Then I am shown a popup informing me I have successfully subscribed
+Scenario: Input a valid email address and submit test
+    Given i am on the website main page
+    When I click the email input field
+    And i input the email 'testcase@gmail.com'
+    And i click the "Submit" button
+    Then A pop-up appears informing me I have been signed up for the newsletter.
 
-Scenario: Invalid email input and submit test
-    Given I am on the website main page
-    When I click the email field
-    And I input the address "invalidTestCase.com"
-    And I click the "Submit" button
-    Then a red border will appear around the email input field
+Scenario: Input a invalid email address and submit test
+    Given i am on the website main page
+    When I click the email input field
+    And i input the email 'testcase-testcase.com' 
+    And i click the "Submit" button
+    Then no pop-up appears and the email field border has a dynamic red color
