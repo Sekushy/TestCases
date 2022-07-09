@@ -9,6 +9,7 @@ After each student will create their ``.feature`` files, the below table should 
 | Section tested | Feature file name | No. test cases | First name of tester(s) |
 |---|---|---|---|
 | Email (example) | Testcase_email.feature| 2 | Andrei|
+|Enrollment| Testcase_enrollment.feature| 2 | Iulian|
 | Promotional | Testcase_promotional.feature | 2 | Bogdan |
 |Additional Information| Testcase_Additional_Information.feature| 3 | Ragnarica|
 | Corresponding social media | Testcase_Corresponding.feature | 3 | Georgiana |
