@@ -21,3 +21,13 @@ Scenario: Click multiple buttons
         | First_Button | Second_Button |
         | 1 | 2 |
         | 3 | 4 |
+
+Scenario: Click multiple buttons
+    Given I am on the first page of the website
+    When I click <A_Button> button
+    Then the <A_Button> button should expand and the page dynamically rearrange itself
+
+    Examples:
+        | A_Button |
+        | 2 |
+        | 5 |
